@@ -1,7 +1,7 @@
-##Overview
+## Overview
 The Project's backend is realized using Spring Boot and for the frontend Vue is used. Project purpose is to create a fully functional eBooks store.
 
-##Part 1
+## Part 1
 In the first part the most important functionality of the eBooks store has been implemented. Currently one user account functions as an admin and client, as security will be added in the third part. 
 
 The eBooks webpage scales based on screen size to make using the site comfortable on both desktop and mobile devices.
@@ -13,7 +13,7 @@ As it is a web store that sells eBooks, user can add products to his shopping ca
 Website admins can manage the books. They are able to add, see, edit and remove books.
 
 
-##Part 3
+## Part 3
 In the third part logging in from different accounts will be implemented. There will be three different user roles: guest, user and admin.
 
 Guests can see all books and their detailed descriptions. In addition to that, guests are able to sort books by price, genre and in alphabetical order; search for books by ISBN, title, author and keyword. Guests can create an account for themselves to become a user or log in to an existing one.
@@ -26,7 +26,7 @@ Links
 Backend repository: https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore
 Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 
-##User stories
+## User stories
 - As a guest I can use a beautiful, logical and homogeneous application.
 
 - As a guest I can see all books and their detailed descriptions.
@@ -55,14 +55,14 @@ Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 
 - As an admin and user I can log out from my account.
 
-##Database schema
+## Database schema
 TBA
 
-##EXTRAS:
+## EXTRAS:
 #Architecture drawing
 TODO
 Architecture drawing. Drawings are good inside tenders. Drawing should have your components and protocols they communicate with. Add drawing to wiki. We recommend draw.io.
 
-#Technical description
+# Technical description
 TODO
 Technical description. Technical descriptions are good inside tenders. You have to describe it well and professionally. Write about components, protocols, technical details, data tables, etc. Add description to wiki.
