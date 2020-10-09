@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+##Overview
+The Project's backend is realized using Spring Boot and for the frontend Vue is used. Project purpose is to create a fully functional eBooks store.
 
-You can use the [editor on GitHub](https://github.com/raitk3/raitk3.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+##Part 1
+In the first part the most important functionality of the eBooks store has been implemented. Currently one user account functions as an admin and client, as security will be added in the third part. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The eBooks webpage scales based on screen size to make using the site comfortable on both desktop and mobile devices.
 
-### Markdown
+The eBook store application displays all books that are currently available for purchase and it is possible to see detailed descriptions of each book individually. It is possible to search for books by ISBN, title, author and keyword. Books can be sorted by price (ascending, descending) and by genre.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As it is a web store that sells eBooks, user can add products to his shopping cart. User can see the contents of his cart. Also if needed it is possible to remove items from the cart. When all necessary products have been added to the cart, the order can be placed and a confirmation about it will be displayed to the user.
 
-```markdown
-Syntax highlighted code block
+Website admins can manage the books. They are able to add, see, edit and remove books.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+##Part 3
+In the third part logging in from different accounts will be implemented. There will be three different user roles: guest, user and admin.
 
-1. Numbered
-2. List
+Guests can see all books and their detailed descriptions. In addition to that, guests are able to sort books by price, genre and in alphabetical order; search for books by ISBN, title, author and keyword. Guests can create an account for themselves to become a user or log in to an existing one.
 
-**Bold** and _Italic_ and `Code` text
+Users can do all the things that a guest can, but they have additional possible activities. Each user has their own personal shopping cart in which they can add products. Users can see their shopping carts contents and remove items from there. Users can finalize their order by submitting it. Users have their personal wishlists, where they can add books that they would like to save for future references.
 
-[Link](url) and ![Image](src)
-```
+Admin role is the most powerful one. Admins can add, see, edit and remove books. In addition to that, admins can also see all registered users accounts and delete them if necessary.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Links
+Backend repository: https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore
+Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 
-### Jekyll Themes
+##User stories
+- As a guest I can use a beautiful, logical and homogeneous application.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/raitk3/raitk3.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- As a guest I can see all books and their detailed descriptions.
 
-### Support or Contact
+- As a guest I can search for books by title, author, keyword and ISBN.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- As a guest I can sort books by price.
+
+- As a guest I can see books displayed by genre.
+
+- As a guest I can create an account.
+
+- As a guest I can login to an existing account.
+ 
+- As a user I can do all the things that guests can do. 
+
+- As a user I can add products to the shopping cart and see confirmation that it was successful.
+
+- As a user I can see the content of my cart and remove unwanted items from there.
+
+- As a user I can place the order and see a confirmation that my purchase was successful.
+
+- As an admin I can see, add, remove and edit books.
+
+- As an admin I can see registered users and delete their accounts.
+
+- As an admin and user I can log out from my account.
+
+##Database schema
+TBA
+
+##EXTRAS:
+#Architecture drawing
+TODO
+Architecture drawing. Drawings are good inside tenders. Drawing should have your components and protocols they communicate with. Add drawing to wiki. We recommend draw.io.
+
+#Technical description
+TODO
+Technical description. Technical descriptions are good inside tenders. You have to describe it well and professionally. Write about components, protocols, technical details, data tables, etc. Add description to wiki.
