@@ -56,7 +56,7 @@ Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 - As an admin and user I can log out from my account.
 
 ## Database schema
-TBA
+![db](uploads/00bd86226bdaaa2dc8749ecd45b2d3a6/db.png)
 
 ## EXTRAS:
 #Architecture drawing
