@@ -23,8 +23,8 @@ Users can do all the things that a guest can, but they have additional possible 
 Admin role is the most powerful one. Admins can add, see, edit and remove books. In addition to that, admins can also see all registered users accounts and delete them if necessary.
 
 Links
-Backend repository: https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore
-Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
+[Backend repository]: https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore
+[Frontend repository]: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 
 # User stories
 - As a guest I can use a beautiful, logical and homogeneous application.
