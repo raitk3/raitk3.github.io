@@ -2,9 +2,8 @@
 The Project's backend is realized using Spring Boot and for the frontend Vue is used. Project purpose is to create a fully functional eBooks store.
 
 ## Links
-Backend repository: [https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore][https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore]
-[https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore]: https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore
-Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
+[Backend repository](https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore)
+[Frontend repository](https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front)
 
 
 # Part 1
