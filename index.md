@@ -63,7 +63,7 @@ Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 
 ![architecture_drawing](https://user-images.githubusercontent.com/47223643/95659238-4dfdad00-0b28-11eb-90f2-e9b216ea3e5e.png)
 
-#TODO:
+# TODO:
 ## Technical description
 TODO
 Technical description. Technical descriptions are good inside tenders. You have to describe it well and professionally. Write about components, protocols, technical details, data tables, etc. Add description to wiki.
