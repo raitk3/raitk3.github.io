@@ -1,6 +1,11 @@
 # Overview
 The Project's backend is realized using Spring Boot and for the frontend Vue is used. Project purpose is to create a fully functional eBooks store.
 
+## Links
+[Backend repository]: https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore
+[Frontend repository]: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
+
+
 # Part 1
 In the first part the most important functionality of the eBooks store has been implemented. Currently one user account functions as an admin and client, as security will be added in the third part. 
 
@@ -21,10 +26,6 @@ Guests can see all books and their detailed descriptions. In addition to that, g
 Users can do all the things that a guest can, but they have additional possible activities. Each user has their own personal shopping cart in which they can add products. Users can see their shopping carts contents and remove items from there. Users can finalize their order by submitting it. Users have their personal wishlists, where they can add books that they would like to save for future references.
 
 Admin role is the most powerful one. Admins can add, see, edit and remove books. In addition to that, admins can also see all registered users accounts and delete them if necessary.
-
-Links
-[Backend repository]: https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore
-[Frontend repository]: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 
 # User stories
 - As a guest I can use a beautiful, logical and homogeneous application.
