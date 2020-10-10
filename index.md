@@ -63,7 +63,7 @@ Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 
 ![architecture_drawing](https://user-images.githubusercontent.com/47223643/95659238-4dfdad00-0b28-11eb-90f2-e9b216ea3e5e.png)
 
-## Technical description
+# Technical description
 
 Our app is a basic store, in this case e-book store. Logic and architecture starts in database. Three main database tables are book, shopping list and user. At this moment we are using one hard-coded user, but this will be changed in part 3. There are 2 tables connected with book: genre table, where are book genres, and image table, that holds book images in bytea. Shopping list table connects book and user, via book id and user id. We user postgres database that runs in docker container.
 
