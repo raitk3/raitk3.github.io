@@ -63,7 +63,11 @@ Frontend repository: https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front
 
 ![architecture_drawing](https://user-images.githubusercontent.com/47223643/95659238-4dfdad00-0b28-11eb-90f2-e9b216ea3e5e.png)
 
-# TODO:
 ## Technical description
-TODO
-Technical description. Technical descriptions are good inside tenders. You have to describe it well and professionally. Write about components, protocols, technical details, data tables, etc. Add description to wiki.
+
+Our app is a basic store, in this case e-book store. Logic and architecture starts in database. Three main database tables are book, shopping list and user. At this moment we are using one hard-coded user, but this will be changed in part 3. There are 2 tables connected with book: genre table, where are book genres, and image table, that holds book images in bytea. Shopping list table connects book and user, via book id and user id. We user postgres database that runs in docker container.
+
+Backend uses repository-service-controller pattern to exchange data between database and client. All books are passed to database as entity (class Book). All books are given to client as dto (class BookResponse), that contains image bytes and genre as string. Each database entity has appropriate repository. All repositories communicate with services. Services communicate with controllers. Genre service-controller makes it possible to add genres and retrieve them. Book service-controller takes books in and also takes in appropriate image. BookResponse service-controller is used to pass information to client. BookSearch and BookSorting service-controller manage book search and sorting. Gradle is used as build automation tool, and liquibase is used as database migration tool. For backend we use Spring Boot.
+
+Frontend communicates with backend via http. Client sends http requests and gets http responses back. Vue is used as frontend framework. UI is divided into components. Components get their data with help of axios library, used for making http requests to server.
+
