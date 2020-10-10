@@ -3,6 +3,7 @@ The Project's backend is realized using Spring Boot and for the frontend Vue is 
 
 ## Links
 [Backend repository](https://gitlab.cs.ttu.ee/rakulb/iti0203-2020-backend-team11-bookstore)
+
 [Frontend repository](https://gitlab.cs.ttu.ee/rakulb/bookstore-11-front)
 
 
@@ -26,6 +27,7 @@ Guests can see all books and their detailed descriptions. In addition to that, g
 Users can do all the things that a guest can, but they have additional possible activities. Each user has their own personal shopping cart in which they can add products. Users can see their shopping carts contents and remove items from there. Users can finalize their order by submitting it. Users have their personal wishlists, where they can add books that they would like to save for future references.
 
 Admin role is the most powerful one. Admins can add, see, edit and remove books. In addition to that, admins can also see all registered users accounts and delete them if necessary.
+
 
 # User stories
 - As a guest I can use a beautiful, logical and homogeneous application.
@@ -56,13 +58,16 @@ Admin role is the most powerful one. Admins can add, see, edit and remove books.
 
 - As an admin and user I can log out from my account.
 
+
 # Database schema
 
 ![db](https://user-images.githubusercontent.com/47223643/95575904-3810bf00-0a38-11eb-8e9e-640b0be20675.png)
 
+
 # Architecture drawing
 
 ![architecture_drawing](https://user-images.githubusercontent.com/47223643/95659238-4dfdad00-0b28-11eb-90f2-e9b216ea3e5e.png)
+
 
 # Technical description
 
