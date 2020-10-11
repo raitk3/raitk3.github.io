@@ -17,6 +17,27 @@ As it is a web store that sells eBooks, user can add products to his shopping ca
 
 Website admins can manage the books. They are able to add, see, edit and remove books.
 
+## User stories done in Part 1
+
+- As a guest I can use a beautiful, logical and homogeneous application.
+
+- As a guest I can see all books and their detailed descriptions.
+
+- As a guest I can search for books by title, author, keyword and ISBN.
+
+- As a guest I can sort books by price.
+
+- As a guest I can see books displayed by genre.
+
+- As a user I can add products to the shopping cart and see confirmation that it was successful.
+
+- As a user I can see the content of my cart and remove unwanted items from there.
+
+- As a user I can place the order and see a confirmation that my purchase was successful.
+
+- As an admin I can see, add, remove and edit books.
+
+
 
 # Part 3
 In the third part logging in from different accounts will be implemented. There will be three different user roles: guest, user and admin.
@@ -28,7 +49,28 @@ Users can do all the things that a guest can, but they have additional possible 
 Admin role is the most powerful one. Admins can add, see, edit and remove books. In addition to that, admins can also see all registered users accounts and delete them if necessary.
 
 
-# User stories
+
+
+# Database schema
+
+![db](https://user-images.githubusercontent.com/47223643/95575904-3810bf00-0a38-11eb-8e9e-640b0be20675.png)
+
+
+# Architecture drawing
+
+![architecture_drawing](https://user-images.githubusercontent.com/47223643/95659238-4dfdad00-0b28-11eb-90f2-e9b216ea3e5e.png)
+
+
+# Technical description
+
+Our app is a basic store, in this case e-book store. Logic and architecture starts in database. Three main database tables are book, shopping list and user. At this moment we are using one hard-coded user, but this will be changed in part 3. There are 2 tables connected with book: genre table, where are book genres, and image table, that holds book images in bytea. Shopping list table connects book and user, via book id and user id. We user postgres database that runs in docker container.
+
+Backend uses repository-service-controller pattern to exchange data between database and client. All books are passed to database as entity (class Book). All books are given to client as dto (class BookResponse), that contains image bytes and genre as string. Each database entity has appropriate repository. All repositories communicate with services. Services communicate with controllers. Genre service-controller makes it possible to add genres and retrieve them. Book service-controller takes books in and also takes in appropriate image. BookResponse service-controller is used to pass information to client. BookSearch and BookSorting service-controller manage book search and sorting. Gradle is used as build automation tool, and liquibase is used as database migration tool. For backend we use Spring Boot.
+
+Frontend communicates with backend via http. Client sends http requests and gets http responses back. Vue is used as frontend framework. UI is divided into components. Components get their data with help of axios library, used for making http requests to server.
+
+
+# User stories for the whole project
 - As a guest I can use a beautiful, logical and homogeneous application.
 
 - As a guest I can see all books and their detailed descriptions.
@@ -57,22 +99,4 @@ Admin role is the most powerful one. Admins can add, see, edit and remove books.
 
 - As an admin and user I can log out from my account.
 
-
-# Database schema
-
-![db](https://user-images.githubusercontent.com/47223643/95575904-3810bf00-0a38-11eb-8e9e-640b0be20675.png)
-
-
-# Architecture drawing
-
-![architecture_drawing](https://user-images.githubusercontent.com/47223643/95659238-4dfdad00-0b28-11eb-90f2-e9b216ea3e5e.png)
-
-
-# Technical description
-
-Our app is a basic store, in this case e-book store. Logic and architecture starts in database. Three main database tables are book, shopping list and user. At this moment we are using one hard-coded user, but this will be changed in part 3. There are 2 tables connected with book: genre table, where are book genres, and image table, that holds book images in bytea. Shopping list table connects book and user, via book id and user id. We user postgres database that runs in docker container.
-
-Backend uses repository-service-controller pattern to exchange data between database and client. All books are passed to database as entity (class Book). All books are given to client as dto (class BookResponse), that contains image bytes and genre as string. Each database entity has appropriate repository. All repositories communicate with services. Services communicate with controllers. Genre service-controller makes it possible to add genres and retrieve them. Book service-controller takes books in and also takes in appropriate image. BookResponse service-controller is used to pass information to client. BookSearch and BookSorting service-controller manage book search and sorting. Gradle is used as build automation tool, and liquibase is used as database migration tool. For backend we use Spring Boot.
-
-Frontend communicates with backend via http. Client sends http requests and gets http responses back. Vue is used as frontend framework. UI is divided into components. Components get their data with help of axios library, used for making http requests to server.
 
